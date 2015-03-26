@@ -1,0 +1,171 @@
+@background: #2C3E50;
+@foreground: #fff;
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #7F8C8D;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;
+    }
+}
+
+.cm-atom,
+.cm-string,
+.cm-string-2,
+.cm-hr {
+    color: #F1C40F;
+}
+
+.cm-number {
+    color: #E67E22;
+}
+
+.cm-attribute,
+.cm-plus {
+    color: #2ECC71;
+}
+
+.cm-def,
+.cm-property {
+    color: #27AE60;
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3 {
+    color: #ECF0F1;
+}
+
+.cm-operator,
+.cm-meta {
+    color: @foreground;
+}
+
+.cm-comment {
+    color: #95A5A6;
+}
+
+.cm-error,
+.cm-minus {
+    color: #E74C3C;
+}
+
+.cm-header {
+    color: #27AE60;
+}
+
+.cm-link {
+    color: #F39C12;
+    text-decoration: none;
+}
+
+.cm-rangeinfo {
+    color: #9B59B6;
+}
+
+.cm-keyword,
+.cm-qualifier,
+.cm-builtin,
+.cm-tag {
+    color: #E74C3C;
+}
+
+.cm-bracket,
+.cm-quote {
+    color: #fff;
+}
+
+.CodeMirror-searching {
+    background-color: #d3cd69;
+    &.searching-current-match {
+        background-color: #f6a644;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #c5c8c6 !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: #F1C40F;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: #34495E;
+    color: #fff !important;
+}
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+    background-color: #34495E;
+    color: #fff !important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #fff;
+}
+
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: #95A5A6;
+    }
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: #7F8C8D;
+    }
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
+    }
+}
+
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
+
+scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    background: rgba(52, 73, 94, .9);
+}
