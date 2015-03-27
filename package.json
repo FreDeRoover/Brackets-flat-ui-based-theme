@@ -1,13 +1,13 @@
 {
-    "name": "hype-flat-ui-theme",
-    "title": "Hype flat",
-    "description": "Hype is a brackets theme based on Designmodo's flat ui",
-    "homepage": "https://github.com/FreDeRoover/Hype-flat-ui-based-brackets-theme",
+    "name": "flat-ui-theme",
+    "title": "Flatness",
+    "description": "Flatness is a Brackets theme based on Designmodo's flat ui",
+    "homepage": "https://github.com/FreDeRoover/Bracket-flat-ui-theme",
     "version": "1.0.0",
     "author": "Fre De Roover <info@frederoover.be> (http://frederoover.be)",
     "repository": {
         "type": "git",
-        "url": "https://github.com/FreDeRoover/Hype-flat-ui-based-brackets-theme"
+        "url": "https://github.com/FreDeRoover/Bracket-flat-ui-theme"
     },
     "theme": {
         "file": "main.less",
