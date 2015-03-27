@@ -2,12 +2,12 @@
     "name": "flat-ui-theme",
     "title": "Flatness",
     "description": "Flatness is a Brackets theme based on Designmodo's flat ui",
-    "homepage": "https://github.com/FreDeRoover/Bracket-flat-ui-theme",
-    "version": "1.0.0",
+    "homepage": "https://github.com/FreDeRoover/Brackets-flat-ui-based-theme",
+    "version": "1.0.1",
     "author": "Fre De Roover <info@frederoover.be> (http://frederoover.be)",
     "repository": {
         "type": "git",
-        "url": "https://github.com/FreDeRoover/Bracket-flat-ui-theme"
+        "url": "https://github.com/FreDeRoover/Brackets-flat-ui-based-theme"
     },
     "theme": {
         "file": "main.less",
