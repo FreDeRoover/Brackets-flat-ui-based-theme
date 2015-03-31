@@ -46,9 +46,12 @@
 }
 
 .cm-variable,
-.cm-variable-2,
-.cm-variable-3 {
+.cm-variable-2 {
     color: #ECF0F1;
+}
+
+.cm-variable-3 {
+    color: #16A085;
 }
 
 .cm-operator,
@@ -88,6 +91,14 @@
 .cm-bracket,
 .cm-quote {
     color: #fff;
+}
+
+.cm-m-javascript.cm-variable {
+    color: #E74C3C;
+}
+
+.cm-m-javascript.cm-property {
+    color: #E67E22;
 }
 
 .CodeMirror-searching {
@@ -164,7 +175,11 @@
     color: @foreground;
 }
 
-scrollbar-thumb,
-::-webkit-scrollbar-thumb {
+.platform-mac .quiet-scrollbars::-webkit-scrollbar-thumb,
+.platform-win .quiet-scrollbars::-webkit-scrollbar-thumb,
+.platform-linux .quiet-scrollbars::-webkit-scrollbar-thumb,
+.dark.platform-mac .quiet-scrollbars::-webkit-scrollbar-thumb,
+.dark.platform-win .quiet-scrollbars::-webkit-scrollbar-thumb,
+.dark.platform-linux .quiet-scrollbars::-webkit-scrollbar-thumb {
     background: rgba(52, 73, 94, .9);
 }
