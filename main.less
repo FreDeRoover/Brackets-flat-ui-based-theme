@@ -1,28 +1,33 @@
+/* The MIT License (MIT)
+
+Copyright © 2015 Fre De Roover <info@frederoover.be> (http://frederoover.be)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE. */
+
+/* Flatness is a Brackets theme based on Designmodo's flat ui colours */
+
+/* Less variables */
+
 @background: #2C3E50;
-@foreground: #fff;
-.CodeMirror,
-.CodeMirror-scroll {
-    background-color: @background;
-    color: @foreground;
-}
+@foreground: #ECF0F1;
 
-.CodeMirror-focused .CodeMirror-activeline-background {
-    background: #7F8C8D;
-}
-
-.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
-    box-shadow: inset 15px 0 0 0 #000;
-}
-
-.CodeMirror-focused .CodeMirror-activeline {
-    .CodeMirror-gutter-elt {
-        background: rgba(0, 0, 0, 0.2);
-        color: #fff;
-    }
-    .inline-widget .CodeMirror-gutter-elt {
-        color: #767676;
-    }
-}
+/* Common tags */
 
 .cm-atom,
 .cm-string,
@@ -93,6 +98,8 @@
     color: #fff;
 }
 
+/* JavaScript extra's */
+
 .cm-m-javascript.cm-variable {
     color: #E74C3C;
 }
@@ -101,10 +108,38 @@
     color: #E67E22;
 }
 
+/* CodeMirror */
+
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #7F8C8D;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #2C3E50;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;
+    }
+}
+
 .CodeMirror-searching {
-    background-color: #d3cd69;
+    background-color: #F1C40F;
+    color: #2C3E50 !important;
     &.searching-current-match {
-        background-color: #f6a644;
+        background-color: #E74C3C;
+        color: #ECF0F1 !important;
     }
 }
 
@@ -166,6 +201,8 @@
     }
 }
 
+/* Image viewer */
+
 .image-view,
 .not-editor {
     background-color: @background;
@@ -175,6 +212,8 @@
     color: @foreground;
 }
 
+/* Scrollbar */
+
 .platform-mac .quiet-scrollbars::-webkit-scrollbar-thumb,
 .platform-win .quiet-scrollbars::-webkit-scrollbar-thumb,
 .platform-linux .quiet-scrollbars::-webkit-scrollbar-thumb,
@@ -182,4 +221,44 @@
 .dark.platform-win .quiet-scrollbars::-webkit-scrollbar-thumb,
 .dark.platform-linux .quiet-scrollbars::-webkit-scrollbar-thumb {
     background: rgba(52, 73, 94, .9);
+}
+
+/* Extensions */
+
+/* Code folding */
+
+.CodeMirror-foldgutter-open:after {
+  content: "\2335";
+  font-size: 1.3em;
+  color: #7F8C8D;
+}
+
+.CodeMirror-foldgutter-folded:after {
+    content: "\007B\007D";
+    background-color: transparent !important;
+    font-size: 1em;
+    color: #F1C40F !important;
+}
+
+.CodeMirror-foldgutter-folded {
+  padding: 0;
+}
+
+.CodeMirror-foldgutter-open {
+  padding-top: 1px;
+}
+
+.CodeMirror-foldmarker {
+  display: inline-block;
+  border-radius: 0.25em;
+  padding: 0 2px;
+  border: 0;
+  font-size: .6em;
+  color: #2C3E50 !important;
+  background-color: #F1C40F;
+
+  &::after {
+    content: '\2022\2022\2022';
+    position: relative;
+  }
 }
