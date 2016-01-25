@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* The MIT License (MIT)
 
 Copyright © 2015 Fre De Roover <info@frederoover.be> (http://frederoover.be)
@@ -48,8 +49,33 @@ THE SOFTWARE. */
 @silver: #bdc3c7;
 @concrete: #95a5a6;
 @asbestos: #7f8c8d;
+=======
+@background: #2C3E50;
+@foreground: #fff;
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
 
-/* Common tags */
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: #7F8C8D;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+>>>>>>> parent of a331d41... More flatness!
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;
+    }
+}
 
 .cm-atom,
 .cm-string,
@@ -121,6 +147,7 @@ THE SOFTWARE. */
     color: #fff;
 }
 
+<<<<<<< HEAD
 /* Sass */
 
 cm-m-sass {
@@ -130,6 +157,8 @@ cm-m-sass {
 
 /* JavaScript extra's */
 
+=======
+>>>>>>> parent of a331d41... More flatness!
 .cm-m-javascript.cm-variable {
     color: @alizarin;
 }
@@ -138,6 +167,7 @@ cm-m-sass {
     color: @carrot;
 }
 
+<<<<<<< HEAD
 
 /* CodeMirror */
 
@@ -171,6 +201,12 @@ cm-m-sass {
     &.searching-current-match {
         background-color: @alizarin;
         color: @clouds !important;
+=======
+.CodeMirror-searching {
+    background-color: #d3cd69;
+    &.searching-current-match {
+        background-color: #f6a644;
+>>>>>>> parent of a331d41... More flatness!
     }
 }
 
@@ -232,9 +268,12 @@ cm-m-sass {
     }
 }
 
+<<<<<<< HEAD
 
 /* Image viewer */
 
+=======
+>>>>>>> parent of a331d41... More flatness!
 .image-view,
 .not-editor {
     background-color: @background;
@@ -244,9 +283,12 @@ cm-m-sass {
     color: @foreground;
 }
 
+<<<<<<< HEAD
 
 /* Scrollbar */
 
+=======
+>>>>>>> parent of a331d41... More flatness!
 .platform-mac .quiet-scrollbars::-webkit-scrollbar-thumb,
 .platform-win .quiet-scrollbars::-webkit-scrollbar-thumb,
 .platform-linux .quiet-scrollbars::-webkit-scrollbar-thumb,
@@ -255,6 +297,7 @@ cm-m-sass {
 .dark.platform-linux .quiet-scrollbars::-webkit-scrollbar-thumb {
     background: rgba(52, 73, 94, .9);
 }
+<<<<<<< HEAD
 
 
 /* Extensions */
@@ -296,3 +339,5 @@ cm-m-sass {
         position: relative;
     }
 }
+=======
+>>>>>>> parent of a331d41... More flatness!
